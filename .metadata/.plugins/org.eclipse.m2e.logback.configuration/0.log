@@ -1,0 +1,6 @@
+2021-10-10 11:37:25,966 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-10 11:40:12,433 [ModalContext] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2021-10-10 11:40:12,538 [ModalContext] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-10-10 11:40:18,178 [sshd-JGitSshClient[657fb344]-nio2-thread-2] WARN  o.e.j.i.t.s.JGitPublicKeyAuthentication - processAuthDataRequest(JGitClientSession[git@github.com/20.201.28.151:22])[ssh-connection][publickey] sent algorithm rsa-sha2-512 but got back ssh-rsa from SSH-2.0-babeld-52e32816
+2021-10-10 11:40:27,324 [sshd-JGitSshClient[aefc8e]-nio2-thread-3] WARN  o.e.j.i.t.s.JGitPublicKeyAuthentication - processAuthDataRequest(JGitClientSession[git@github.com/20.201.28.151:22])[ssh-connection][publickey] sent algorithm rsa-sha2-512 but got back ssh-rsa from SSH-2.0-babeld-52e32816
+2021-10-10 15:41:50,709 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

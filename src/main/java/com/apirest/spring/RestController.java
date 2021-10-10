@@ -1,5 +1,8 @@
 package com.apirest.spring;
 
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -101,5 +104,41 @@ public class RestController {
 	public void addFalta(@RequestParam (name= "idCampeonato")Integer idCampeonato,@RequestParam (name= "idPartido")Integer idPartido,@RequestParam (name= "idJugador")Integer idJugador,@RequestParam (name= "tipo")String tipo,@RequestParam (name= "minuto")Integer minuto) throws usuarioException {
 		ControladorTPO.getInstance().agregarFaltaVO(idCampeonato,idJugador,idPartido,tipo,minuto);
 	}
+	
+	@GetMapping("/obtenerClubes")
+	public List<clubVO> obtenerClubes() throws usuarioException {
+		return ControladorTPO.getInstance().obtenerClubesVO();
+	}
+	
+	@GetMapping("/obtenerPartidos")
+	public List<partidoVO> obtenerPartidos() throws usuarioException {
+		return ControladorTPO.getInstance().obtenerPartidosVO();
+	}
+	
+	@GetMapping("/obtenerFaltas")
+	public List<faltaVO> obtenerFaltas() throws usuarioException {
+		return ControladorTPO.getInstance().obtenerFaltasVO();
+	}
+	
+	@GetMapping("/obtenerGoles")
+	public List<golVO> obtenerGoles() throws usuarioException {
+		return ControladorTPO.getInstance().obtenerGolesVO();
+	}
+	
+	@GetMapping("/obtenerJugadores")
+	public List<jugadorVO> obtenerJugadores() throws usuarioException {
+		return ControladorTPO.getInstance().obtenerJugadoresVO();
+	}
+	
+	@GetMapping("/obtenerMiembros")
+	public List<miembroVO> obtenerMiembros() throws usuarioException {
+		return ControladorTPO.getInstance().obtenerMiembrosVO();
+	}
+	
+	@GetMapping("/obtenerResponsables")
+	public List<responsableVO> obtenerResponsables() throws usuarioException {
+		return ControladorTPO.getInstance().obtenerResponsablesVO();
+	}
+	
 }
 
